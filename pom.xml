@@ -1,0 +1,91 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>zk.support</groupId>
+    <artifactId>zk-echart</artifactId>
+    <packaging>war</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <name>ZK ECharts Example Project</name>
+    <properties>
+        <zk.version>9.6.3-Eval</zk.version>
+        <maven.build.timestamp.format>yyyy-MM-dd</maven.build.timestamp.format>
+        <packname>-${project.version}-FL-${maven.build.timestamp}</packname>
+        <maven.compiler.source>1.9</maven.compiler.source>
+        <maven.compiler.target>1.9</maven.compiler.target>
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>org.zkoss.zk</groupId>
+            <artifactId>zkmax</artifactId>
+            <version>${zk.version}</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.lowagie</groupId>
+                    <artifactId>itext</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.zkoss.zk</groupId>
+            <artifactId>zuti</artifactId>
+            <version>${zk.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.icepear.echarts</groupId>
+            <artifactId>echarts-java</artifactId>
+            <version>1.0.7</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+    <licenses>
+        <license>
+            <name>GNU LESSER GENERAL PUBLIC LICENSE, Version 3</name>
+            <url>http://www.gnu.org/licenses/lgpl.html
+            </url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <repositories>
+        <repository>
+            <id>ZK CE</id>
+            <name>ZK CE Repository</name>
+            <url>https://mavensync.zkoss.org/maven2</url>
+        </repository>
+        <repository>
+            <id>ZK EE Evaluation</id>
+            <url>https://mavensync.zkoss.org/zk/ee-eval</url>
+        </repository>
+        <repository>
+            <id>ZK EE</id>
+            <url>https://maven.zkoss.org/repo/zk/ee</url>
+        </repository>
+    </repositories>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>zkmaven</id>
+            <name>ZK Maven Plugin Repository</name>
+            <url>https://mavensync.zkoss.org/maven2/</url>
+        </pluginRepository>
+    </pluginRepositories>
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>10.0.5</version>
+                <configuration>
+                    <webApp>
+                        <contextPath>/${project.artifactId}</contextPath>
+                        <allowDuplicateFragmentNames>true</allowDuplicateFragmentNames>
+                    </webApp>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

@@ -1,0 +1,6 @@
+<zk xmlns:n="native">
+    <div apply="zk.StartComposer" height="100%">
+        <button id="update" label="Update"/>
+        <iframe src="index.html" height="100%" width="100%"/>
+    </div>
+</zk>

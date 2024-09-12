@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<zk xmlns="http://www.zkoss.org/2005/zk/config"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.zkoss.org/2005/zk/config http://www.zkoss.org/2005/zk/config/zk.xsd">
+    <preference>
+        <name>org.zkoss.zk.ui.WebApp.name</name>
+        <value>zk9support</value>
+    </preference>
+    <client-config>
+        <debug-js>true</debug-js>
+    </client-config>
+<!--    <listener>-->
+<!--        <listener-class>zk.BootstrapStyleGenerator</listener-class>-->
+<!--    </listener>-->
+<!--    <library-property>-->
+<!--        <name>org.zkoss.zk.WPD.cache</name>-->
+<!--        <value>false</value>-->
+<!--    </library-property>-->
+<!--    <library-property>-->
+<!--        <name>org.zkoss.bind.BindEvaluatorX.class</name>-->
+<!--        <value>benchmark.BindEvaluatorXImplExt</value>-->
+<!--    </library-property>-->
+<!--    <listener>-->
+<!--        <listener-class>benchmark.EMFELResolver</listener-class>-->
+<!--    </listener>-->
+<!--    <system-config>-->
+<!--        <ui-factory-class>org.zkoss.zk.ui.http.SerializableUiFactory</ui-factory-class>-->
+<!--    </system-config>-->
+<!--	<library-property>-->
+<!--		<name>org.zkoss.zk.config.path</name>-->
+<!--		<value>/WEB-INF/zk2.xml</value>-->
+<!--	</library-property>-->
+<!--    <library-property>-->
+<!--        <name>org.zkoss.bind.PhaseListener.class</name>-->
+<!--        <value>shl.CommandLogListener</value>-->
+<!--    </library-property>-->
+<!--    <library-property>-->
+<!--        <name>org.zkoss.zk.ui.uuidRecycle.disabled</name>-->
+<!--        <value>true</value>-->
+<!--    </library-property>-->
+<!--    <listener>-->
+<!--        <listener-class>org.zkoss.zkmax.au.websocket.WebSocketWebAppInit</listener-class>-->
+<!--    </listener>-->
+<!--    <library-property>-->
+<!--        <name>org.zkoss.zkmax.au.websocket.WebSocketEndPoint.pingIntervalSecond</name>-->
+<!--        <value>0</value>-->
+<!--    </library-property>-->
+<!--    <library-property>-->
+<!--        <name>org.zkoss.zkmax.au.websocket.WebSocketEndPoint.pingTimeoutSecond</name>-->
+<!--        <value>5</value>-->
+<!--    </library-property>-->
+<!--    <library-property>-->
+<!--        <name>org.zkoss.bind.DebuggerFactory.enable</name>-->
+<!--        <value>true</value>-->
+<!--    </library-property>-->
+<!--    <device-config>-->
+<!--        <device-type>ajax</device-type>-->
+<!--    </device-config>-->
+<!--    <library-property>-->
+<!--        <name>org.zkoss.web.preferred.timeZone</name>-->
+<!--        <value>GMT+8</value>-->
+<!--    </library-property>-->
+    <!--    enable data binding debug logging -->
+<!--    <library-property>-->
+<!--        <name>org.zkoss.bind.DebuggerFactory.enable</name>-->
+<!--        <value>true</value>-->
+<!--    </library-property>-->
+    <!-- use a custom debug logger -->
+<!--    <library-property>-->
+<!--        <name>org.zkoss.bind.DebuggerFactory.class</name>-->
+<!--        <value>shl.LogCommandFactory</value>-->
+<!--    </library-property>-->
+
+    <!--        <enable-source-map>true</enable-source-map>-->
+    <!--        <auto-resend-timeout>3000</auto-resend-timeout>-->
+    <!--    <library-property>-->
+<!--        <name>org.zkoss.web.preferred.locale</name>-->
+<!--        <value>de</value>-->
+<!--    </library-property>-->
+<!--    <desktop-config>-->
+<!--        <desktop-timeout>10</desktop-timeout>-->
+<!--    </desktop-config>-->
+<!--    <system-config>-->
+<!--        <id-generator-class>org.zkoss.zk.ui.impl.StaticIdGenerator</id-generator-class>-->
+        <!--<id-generator-class>support.ticket.IDGenerator</id-generator-class>-->
+<!--        <ui-factory-class>org.zkoss.zk.ui.http.SerializableUiFactory</ui-factory-class>-->
+<!--    </system-config>-->
+<!--    <library-property>-->
+<!--        <name>org.zkoss.web.servlet.http.URLEncoder</name>-->
+<!--        <value>hybris.TomcatFixedURLEncoder</value>-->
+<!--    </library-property>-->
+<!--    <library-property>-->
+<!--        <name>org.zkoss.theme.preferred</name>-->
+<!--        <value>iceblue_c</value>-->
+<!--        <value>wcag</value>-->
+<!--        <value>lkvtheme</value>-->
+<!--    </library-property>-->
+<!--    <language-mapping>-->
+<!--        <extension>svg</extension>-->
+<!--        <language-name>xhtml</language-name>-->
+<!--    </language-mapping>-->
+<!--    <library-property>-->
+<!--        <name>org.zkoss.zk.ZUML.cache</name>-->
+<!--        <value>true</value>-->
+<!--    </library-property>-->
+<!--    <library-property>-->
+<!--        <name>org.zkoss.zul.css.flex</name>-->
+<!--        <value>false</value>-->
+<!--    </library-property>-->
+<!--    <library-property>-->
+<!--        <name>org.zkoss.zk.ui.versionInfo.enabled</name>-->
+<!--        <value>2021</value>-->
+<!--    </library-property>-->
+<!--    <desktop-config>-->
+<!--        <theme-provider-class>almeria.MyThemeProvider</theme-provider-class>-->
+<!--    </desktop-config>-->
+<!--    <error-pageN>-->
+<!--        <exception-type>java.lang.Throwable</exception-type>-->
+<!--        <location>/error.zul</location>-->
+<!--    </error-page>-->
+<!--    <session-config>-->
+<!--        <device-type>ajax</device-type>-->
+<!--        <session-timeout>10</session-timeout>-->
+<!--        <max-desktops-per-session>5</max-desktops-per-session>-->
+<!--        <timeout-uri>/timeout.zul</timeout-uri>-->
+<!--        <timer-keep-alive>true</timer-keep-alive>-->
+<!--        <automatic-timeout>true</automatic-timeout>-->
+<!--        <timeout-message>script:zAu.cmd0.showNotification(null==zk.timeoutMessage ? 'default timeout message':zk.timeoutMessage, 'info', null, null, null, null, -1, false);</timeout-message>-->
+<!--    </session-config>-->
+<!--    <listener>-->
+<!--        <listener-class>org.zkoss.zkmax.au.websocket.WebSocketWebAppInit</listener-class>-->
+<!--    </listener>-->
+<!--    <listener>-->
+<!--        <listener-class>ticket.ExecutionInitListener</listener-class>-->
+<!--    </listener>-->
+    <!--    <library-property>-->
+<!--        <name>org.zkoss.zkmax.au.websocket.WebSocketEndPoint.reconnectionAttempts</name>-->
+<!--        <value>5</value>-->
+<!--    </library-property>-->
+<!--&lt;!&ndash;    <library-property>&ndash;&gt;-->
+<!--        <name>org.zkoss.zkmax.au.websocket.WebSocketEndPoint.reconnectionDelay</name>-->
+<!--        <value>2000</value>-->
+<!--    </library-property>-->
+<!--    <library-property>-->
+<!--        <name>org.zkoss.bind.DebuggerFactory.enable</name>-->
+<!--        <value>true</value>-->
+<!--    </library-property>-->
+<!--    <listener>-->
+<!--        <listener-class>hoolyhi.EnforceLogoutListener</listener-class>-->
+<!--    </listener>-->
+<!--    <listener>-->
+<!--        <listener-class>hoolyhi.ServerPushComposer</listener-class>-->
+<!--    </listener>-->
+<!--    <library-property>-->
+<!--        <name>org.zkoss.zul.progressbox.position</name>-->
+<!--        <value>bottom, center</value>-->
+<!--    </library-property>-->
+<!--    <listener>-->
+<!--        <listener-class>cestel.DesktopListener</listener-class>-->
+<!--    </listener>-->
+<!--<language-config>-->
+<!--<addon-uri>/WEB-INF/patch-addon.xml</addon-uri>-->
+<!--</language-config>-->
+</zk>
